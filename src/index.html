@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>GeoMedia</title>
+  <title>Document</title>
 </head>
+
 <body>
-  <div class="container">
-    <h2 class="widget-header">ТайМлайн</h2>
+  <h1>"Geolocation"</h1>
 
-    <ul class="list">
-    </ul>
+  <div class="app-container">
 
-    <div class="containerfooter">
-      <form name="unitForm" novalidate class="form" id="newEntryForm" onkeypress="if(event.keyCode == 13) return false;">
-        <input class="forminput" type="text" name="description" id = "newEntryInput" required placeholder="Введите текст заметки">
-      </form
+    <div class="chat-container">
+      <div class="chat">
+      </div>
+      <form class="message-form" action="submit">
+        <input class="message-input" type="text" placeholder="Type your message here">
+        <button class="message-send">send</button>
+      </form>
+    </div>
+
+    <div class="modal-container hidden">
+      <form class="modal-form" action="submit">
+        <label class="modal-label">Что-то пошло не так</label>
+        <p>К сожалению, нам не удалось определить ваше местоположение, пожалуйста,
+          дайте разрешение на использование геолокации, либо введите координаты вручную </p>
+        <input class="modal-input" type="text" placeholder="Широта и долгота через запятую">
+        <div class="btn-container">
+          <button type="reset" class="modal-btn reset-btn">Отмена</button>
+          <button type="submit" class="modal-btn">ОК</button>
+        </div>
+      </form>
     </div>
 
   </div>
+
 </body>
+
 </html>
