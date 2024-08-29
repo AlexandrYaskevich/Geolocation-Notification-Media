@@ -1,5 +1,4 @@
-
-import Modal from '../components/Modal.js';
+import Modal from '../components/modal.js';
 
 test('valid form', () => {
   const modal = new Modal();
