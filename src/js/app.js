@@ -1,5 +1,5 @@
-import Message from '../message.js';
-import Modal from '../modal.js';
+import Message from './message.js';
+
 
 class App {
   constructor() {

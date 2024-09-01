@@ -1,4 +1,4 @@
-import Message from '../message.js';
+import Message from './message.js';
 
 export default class Modal {
   constructor() {
