@@ -5,7 +5,7 @@ export default class Message {
     this.date = new Date().toString().slice(3, 21);
   }
 
-  createMessage(chat, messages) {
+  createMessage = (chat, messages)=> {
     // eslint-disable-next-line no-param-reassign
     chat.innerHTML = '';
     messages.forEach((msg) => {

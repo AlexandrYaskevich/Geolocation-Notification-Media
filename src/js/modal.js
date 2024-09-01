@@ -1,11 +1,11 @@
-import Message from './message.js';
+import Message from '../message.js';
 
 export default class Modal {
   constructor() {
     this.modalContainer = document.querySelector('.modal-container');
     this.modalForm = document.querySelector('.modal-form');
     this.modalInput = document.querySelector('.modal-input');
-
+    this.checkValidity = this.checkValidity.bind(this);
     this.resetBtn = document.querySelector('.reset-btn');
   }
 
@@ -48,7 +48,7 @@ export default class Modal {
     this.modalContainer.classList.add('hidden');
   }
 
-  checkValidity(string) {
+  checkValidity = (string) => {
     return string.match(/(-*\d+\.\d+),\s*(-*\d+\.\d+)/gm);
   }
 }
