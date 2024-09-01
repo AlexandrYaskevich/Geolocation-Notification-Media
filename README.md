@@ -6,4 +6,4 @@
 
 https://ci.appveyor.com/project/AlexandrYaskevich/Geolocation-Notification-Media
 
-Github Pages: https://AlexandrYaskevich.github.io/Geolocation-Notification-Media/
+Github Pages: https://AlexandrYaskevich.github.io/Geolocation-Notification-Media/index.html
